@@ -3,7 +3,7 @@ import { loginReducer } from './authReducers';
 import { createCategoryReducer, fetchAllCategoriesReducer } from './categoryReducer';
 import { fetchAllCustomersReducer } from './customerReducers';
 import { fetchAllProductsReducer, createProductReducer } from './productReducers';
-import { createStoreReducer, fetchAllStoresReducer, fetchStoreByIdReducer } from './storeReducers';
+import { addProductToStoreReducer, createStoreReducer, fetchAllAvailableStoreProductsByStoreIdReducer, fetchAllStoreProductsByStoreIdReducer, fetchAllStoresReducer, fetchStoreByIdReducer } from './storeReducers';
 
 export default combineReducers({
     auth: loginReducer,
@@ -22,5 +22,8 @@ export default combineReducers({
     // stores
     fetchAllStores: fetchAllStoresReducer,
     createStore: createStoreReducer,
-    fetchStoreById: fetchStoreByIdReducer
+    fetchStoreById: fetchStoreByIdReducer,
+    fetchAllAvailableStoreProductsByStoreId: fetchAllAvailableStoreProductsByStoreIdReducer,
+    fetchAllStoreProductsByStoreId: fetchAllStoreProductsByStoreIdReducer,
+    addProductToStore: addProductToStoreReducer
 });
