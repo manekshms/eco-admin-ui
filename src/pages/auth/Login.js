@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import { loginAction } from '../../store/actions/authActions';
+import logo from '../../assets/images/logo.png';
 
 const Login = (props) => {
     const { login } = props;
@@ -30,8 +31,8 @@ const Login = (props) => {
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">
               <div className="auth-form-light text-left py-5 px-4 px-sm-5">
-                <div className="brand-logo">
-                    <h3 style={{color: '#000'}}>Eco-Admin</h3>
+                <div className="brand-logo" style={{display: 'flex', justifyContent: 'center'}}>
+                    <img src={logo} alt="Logo" />
                 </div>
                 <h4>Hello! let's get started</h4>
                 <h6 className="font-weight-light">Sign in to continue.</h6>

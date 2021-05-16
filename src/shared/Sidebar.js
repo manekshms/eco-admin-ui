@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 
 import './Sidebar.scss';
 import { logoutAction } from '../store/actions/authActions';
+import LogoLight from '../assets/images/logo-white.png';
 
 class Sidebar extends Component {
   state = {};
@@ -63,7 +64,7 @@ class Sidebar extends Component {
     return (
       <nav className="sidebar sidebar-offcanvas" id="sidebar">
         <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
-          <a className="sidebar-brand brand-logo" href="index.html">ECO-Admin</a>
+          <a className="sidebar-brand brand-logo" href="index.html"><img style={{widht: '200px', height: 'auto'}} src={LogoLight} alt="Logo Light" /></a>
           <a className="sidebar-brand brand-logo-mini pt-3" href="index.html">ECO-Admin</a>
         </div>
         <ul className="nav">
